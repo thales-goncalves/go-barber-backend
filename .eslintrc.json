@@ -1,7 +1,7 @@
 {
   "env": {
     "es6": true,
-    "node": true,
+    "node": true
   },
   "extends": [
     "airbnb-base",
@@ -10,6 +10,7 @@
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
+  "class-methods-use-this": "off",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"

@@ -46,7 +46,7 @@ describe('AuthenticationUser', () => {
     const email = 'john@doe.com';
     const password = '000000';
 
-    expect(
+    await expect(
       authenticateUserService.execute({
         email,
         password,
@@ -75,7 +75,7 @@ describe('AuthenticationUser', () => {
       password,
     });
 
-    expect(
+    await expect(
       authenticateUserService.execute({
         email,
         password: '111111',
